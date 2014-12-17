@@ -1,10 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
-//apply plugin: 'checkstyle'
+apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 
 test.testLogging { exceptionFormat "full"; events "failed", "passed", "skipped" }
-//checkstyle.ignoreFailures = true
+checkstyle.ignoreFailures = true
 
 findbugs {
   toolVersion = "2.0.1"

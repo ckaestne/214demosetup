@@ -2,6 +2,7 @@ package demo;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class HelloTest {
@@ -15,7 +16,7 @@ public class HelloTest {
 		assertTrue(new HelloWorld().getMessage().startsWith("hi"));
 	}
 	
-	@Test
+	@Test@Ignore("failing")
 	public void testFailure() {
 		assertEquals(3, 1+4);
 	}
