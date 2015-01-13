@@ -1,5 +1,7 @@
 language: java
 
+env: TERM=dumb
+
 script: timeout 600 gradle check
 
 sudo: false
