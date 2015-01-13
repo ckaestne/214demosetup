@@ -1,3 +1,5 @@
 language: java
 
 script: timeout 600 gradle check
+
+sudo: false
